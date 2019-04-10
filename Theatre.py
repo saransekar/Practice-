@@ -1,22 +1,31 @@
 class Theatre:
-    def __init__(self, theatrename, moviename, price):
-        self.__theatre = theatrename
-        self.__moviename = moviename
+    def __init__(self, theatreName, movieName, showTime, seat, price):
+        self.__theatre = theatreName
+        self.__movieName = movieName
+        self.__showTime = showTime
+        self.__seat = seat
         self.__price = price
-       
+        
+
+    def setTheatreName(self, Theatre):
+        self.__theatre = Theatre        
 
     def getTheatreName(self):
-    	return self.__theatre
+        return self.__theatre    
 
-    #def setTheatreName(self, theatreName):
-        #self.__theatre = theatreName
+    def getMovieName(self):            
+        return self.__movieName
 
-    def getMovieName(self):
-        return self.__moviename
+    def getShowTime(self):
+        return self.__showTime    
 
-    #def setMovieName(self, movieName):
-       # self.__moviename = movieName
+    def setSeat(self, Seat):
+        self.__seat = Seat     
+
+    def getSeat(self):
+        return self.__seat      
 
     def getPrice(self):
-        return self.__price
-   
+        return self.__price      
+
+        
